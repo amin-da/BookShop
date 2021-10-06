@@ -11,7 +11,7 @@
   --black: #444;
   --border: 0.1rem solid rgba(0, 0, 0, 0.1);
   --border-hover: 0.1rem solid var(--black);
-  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 
 /* basic style */
@@ -206,7 +206,7 @@ body {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.8);
-  transition: all 0.3s ease-in;
+  transition: all 0.4s ease-in;
 }
 .login-form-container.active {
   top: 0;
@@ -220,7 +220,8 @@ body {
   padding: 1rem;
   box-shadow: var(--box-shadow);
   border-radius: 0.5rem;
-  /* margin: 2rem; */
+  /* animation duration  Dependent on Animate.css library */
+  animation-duration: 1.3s;
 }
 
 .login-form-container form h3 {

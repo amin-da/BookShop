@@ -25,11 +25,19 @@ document.querySelector("#search-btn").onclick = () => {
 
 //Login form functionality
 
-let loginForm = document.querySelector(".login-form-container ");
+let loginFormContainer = document.querySelector(".login-form-container ");
+//برای اینکه انمیشن فرم لاگین کار کند لازم است که خود المنت فرم هم
+//گرفته شود و به صورت داینامیک کلاس های انیمیشن لایبرری انیمیت.سی اس اس به آن حذف و اضافه شوند
+const loginForm = document.querySelector(".login-form");
+
 document.querySelector("#login-btn").onclick = () => {
-  loginForm.classList.toggle("active");
+  loginFormContainer.classList.toggle("active");
+  loginForm.classList.add("animate__zoomInDown");
 };
 
 document.querySelector("#close-login-btn").onclick = () => {
-  loginForm.classList.remove("active");
+  loginFormContainer.classList.remove("active");
+  loginForm.classList.remove("animate__zoomInDown");
 };
+
+//
