@@ -1,0 +1,345 @@
+/* Fonts */
+@font-face {
+  font-family: "Sahel";
+  src: url("../fonts/Sahel.woff") format("woff");
+}
+/* Varibale */
+:root {
+  --green: #27ae60;
+  --dark-color: #219150;
+  --light-color: #666;
+  --black: #444;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* basic style */
+* {
+  font-family: "Sahel", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  transition: width none;
+}
+
+html {
+  font-size: 85%;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--black);
+  border-radius: 5rem;
+}
+
+body {
+  background: var(--bg);
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0.7rem 2.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: var(--green);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: var(--dark-color);
+}
+
+/* header style */
+.header {
+  direction: rtl !important;
+}
+.header .header-1 {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1%;
+}
+
+.header .header-1 .logo {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: var(--black);
+  right: 2rem;
+}
+
+.header .header-1 .logo i {
+  position: absolute;
+  color: var(--green);
+  padding: 3px;
+  font-size: 2rem;
+  right: -2.7rem;
+  top: 0;
+}
+
+.header .header-1 .search-form {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  width: 30rem;
+  height: 2.3rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.header .header-1 .search-form input {
+  font-size: 1.5rem;
+  height: 100%;
+  width: 100%;
+  padding: 0 1.5rem;
+  text-transform: none;
+  color: var(--black);
+}
+
+.header .header-1 .search-form label {
+  font-size: 1.5rem;
+  padding-left: 0.3rem;
+  color: var(--black);
+  cursor: pointer;
+}
+.header .header-1 .search-form label:hover {
+  color: var(--green);
+}
+
+.header .header-1 .icons div,
+.header .header-1 .icons a {
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover {
+  color: var(--green);
+}
+#search-btn {
+  display: none;
+}
+
+.header .header-2 {
+  background: var(--green);
+}
+
+.header .header-2 .navbar {
+  text-align: center;
+}
+
+.header .header-2 .navbar a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.header .header-2 .navbar a:hover {
+  background: var(--dark-color);
+}
+/* تنظیم حالت نوبار سایت در حال اسکرول بوسیله جاوا اسکریپت و سی اس اس */
+.header .header-2.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+body {
+  height: 300rem;
+}
+
+/* Bottom Navbar */
+.bottom-navbar {
+  direction: rtl;
+  text-align: center;
+  background: var(--green);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+}
+.bottom-navbar a {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  color: #fff;
+}
+.bottom-navbar a:hover {
+  color: var(--dark-color);
+}
+
+/* Login Form */
+.login-form-container {
+  position: fixed;
+  top: -105%;
+  right: 0%;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease-in;
+}
+.login-form-container.active {
+  top: 0;
+}
+
+.login-form-container form {
+  direction: rtl;
+  background: #fff;
+  border: var(--border);
+  width: 40rem;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  /* margin: 2rem; */
+}
+
+.login-form-container form h3 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.login-form-container form span {
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+.login-form-container form .box {
+  margin: 0.7rem 0;
+  font-size: 1.5rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  text-transform: none;
+  padding: 0.3rem;
+  color: var(--black);
+  width: 100%;
+}
+
+.login-form-container form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.login-form-container form .checkbox label {
+  font-size: 1.2rem;
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+.login-form-container form .btn {
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.login-form-container form p {
+  font-size: 1.2rem;
+  color: var(--light-color);
+  padding-top: 0.7rem;
+}
+.login-form-container form p a {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.login-form-container #close-login-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+/* Media queris */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 70%;
+  }
+
+  .header .header-1 {
+    padding: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 0;
+  }
+
+  body {
+    padding-bottom: 2rem;
+  }
+
+  .header .header-2 {
+    display: none;
+  }
+  .bottom-navbar {
+    display: block;
+  }
+  .header .header-1 {
+    box-shadow: var(--box-shadow);
+    position: relative;
+  }
+  .header .header-1 .search-form {
+    position: absolute;
+    top: -110%;
+    width: 80%;
+    right: 5rem;
+    box-shadow: var(--box-shadow);
+  }
+  #search-btn {
+    display: inline-block;
+  }
+  .header .header-1 .search-form.active {
+    top: 110%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 60%;
+    border: 1px solid red;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+    border: 1px solid red;
+  }
+}

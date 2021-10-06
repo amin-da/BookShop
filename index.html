@@ -6,15 +6,93 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>BookShop</title>
 
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
     <!-- css file linke -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-   
-   <!-- header section starts -->
+    <!-- header section starts -->
+    <header class="header">
+      <div class="header-1">
+        <a href="#" class="logo"
+          ><i class="fas fa-book-open"></i>فروشگاه کتاب</a
+        >
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            id="search-box"
+            placeholder="جستجو کنید..."
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <div id="login-btn" class="fas fa-user"></div>
+        </div>
+      </div>
 
-   
-   <!-- header section ends -->
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="#home">خانه</a>
+          <a href="#featuerd">برترین ها</a>
+          <a href="#arrivals">تازه ها</a>
+          <a href="#reviews">نظرات</a>
+          <a href="#blogs">وبلاگ</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- bottom navbar -->
+    <nav class="bottom-navbar">
+      <a href="#home" class="fas fa-home"></a>
+      <a href="#featuerd" class="fas fa-list"></a>
+      <a href="#arrivals" class="fas fa-tags"></a>
+      <a href="#reviews" class="fas fa-comments"></a>
+      <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+
+    <!-- login form -->
+    <div class="login-form-container">
+
+      <div id="close-login-btn" class="fas fa-times"></div>
+
+      <form action="">
+        <h3>ورود</h3>
+        <span>نام کاربری</span>
+        <input
+          type="email"
+          name=""
+          id=""
+          class="box"
+          placeholder="ایمیل خود را وارد کنید"
+        />
+        <span>پسورد</span>
+        <input
+          type="email"
+          name=""
+          id=""
+          class="box"
+          placeholder="پسورد خود را وارد کنید"
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">من را به یاد بیاور</label>
+        </div>
+        <input type="submit" value="ورود" class="btn" />
+        <p>رمز عبور خود را فراموش کرده اید ؟<a href="#">اینجا کلیک کنید</a></p>
+        <p>اکانت نداردید ؟<a href="#">یک عدد بسازید</a></p>
+      </form>
+    </div>
 
     <!-- js file linke -->
     <script src="./js/script.js"></script>
