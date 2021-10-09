@@ -51,6 +51,9 @@ body {
   background: var(--bg);
 }
 
+section {
+  padding: 4rem 8%;
+}
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -197,7 +200,7 @@ body {
 /* Login Form */
 .login-form-container {
   position: fixed;
-  top: -105%;
+  top: -115%;
   right: 0%;
   z-index: 10000;
   height: 100%;
@@ -286,6 +289,76 @@ body {
   color: var(--black);
 }
 
+/* Home Style */
+.home {
+  background: url(../image/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: row;
+}
+.home .row .content {
+  flex: 1 1 15rem;
+  direction: rtl;
+  text-align: center;
+}
+.home .row .content h3 {
+  color: var(--black);
+  font-size: 3rem;
+  text-align: center;
+}
+.home .row .content p {
+  color: var(--light-color);
+  font-size: 1rem;
+  line-height: 2;
+  padding: 1rem 0;
+  text-align: center;
+}
+.home .row .books-slider {
+  flex: 1 1 45rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.home .row .books-slider a img {
+  height: 20rem;
+}
+.home .row .books-slider a:hover img {
+  transform: scale(0.95);
+}
+
+.home .row .books-slider .stand {
+  width: 100%;
+  margin-top: -2rem;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
 /* Media queris */
 
 @media (max-width: 991px) {
@@ -295,6 +368,13 @@ body {
 
   .header .header-1 {
     padding: 1rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+  .home .row .content {
+    text-align: center;
+    flex: 1 1 40rem;
   }
 }
 @media (max-width: 768px) {
@@ -328,6 +408,10 @@ body {
   }
   .header .header-1 .search-form.active {
     top: 110%;
+  }
+
+  .home .row .content h3 {
+    font-size: 2.5rem;
   }
 }
 
