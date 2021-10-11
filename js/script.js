@@ -40,7 +40,7 @@ document.querySelector("#close-login-btn").onclick = () => {
   loginForm.classList.remove("animate__zoomInDown");
 };
 
-//swiper slider
+//swiper slider for home section
 var swiper = new Swiper(".books-slider", {
   observer: true,
   observeParents: true,
@@ -54,6 +54,38 @@ var swiper = new Swiper(".books-slider", {
   },
   breakpoints: {
     0: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 3
+    },
+    1024: {
+      slidesPerView: 4
+    }
+  }
+});
+
+//swiper slider for feautred section
+var swiper = new Swiper(".featured-slider", {
+   slidesPerView: 'auto',
+  centeredSlides: true,
+  paginationClickable: true,
+  loop: true,
+  spaceBetween: 10,
+  slideToClickedSlide: true,
+  autoplay: {
+    enabled: true,
+    delay: 3000
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    450: {
       slidesPerView: 2
     },
     768: {
