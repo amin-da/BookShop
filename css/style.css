@@ -597,13 +597,53 @@ body {
   text-decoration: line-through;
 }
 
-.arrivals .arrivals-slider .box .content .stars i{
-
+.arrivals .arrivals-slider .box .content .stars i {
   font-size: 1.2rem;
-  color: var(--green);  
-
-
+  color: var(--green);
 }
+
+.deal {
+  direction: rtl;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.deal .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  direction: rtl;
+  flex: 1 1 41rem;
+}
+
+.deal .image {
+  flex: 1 1 15rem;
+}
+.deal .image img {
+  width: 100%;
+}
+
+.deal .content h3 {
+  color: var(--green);
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.deal .content h1 {
+  color: var(--black);
+  font-size: 3rem;
+}
+
+.deal .content p {
+  color: var(--light-color);
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
 /* Media queris */
 
 @media (max-width: 991px) {
