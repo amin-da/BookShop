@@ -67,7 +67,7 @@ var swiper = new Swiper(".books-slider", {
 
 //swiper slider for feautred section
 var swiper = new Swiper(".featured-slider", {
-   slidesPerView: 'auto',
+  slidesPerView: "auto",
   centeredSlides: true,
   paginationClickable: true,
   loop: true,
@@ -93,6 +93,33 @@ var swiper = new Swiper(".featured-slider", {
     },
     1024: {
       slidesPerView: 4
+    }
+  }
+});
+
+//swiper slider for arrivals section
+var swiper = new Swiper(".arrivals-slider", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  paginationClickable: true,
+  loop: true,
+  spaceBetween: 10,
+  slideToClickedSlide: true,
+  autoplay: {
+    enabled: true,
+    delay: 3000
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
     }
   }
 });

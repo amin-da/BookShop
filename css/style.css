@@ -545,23 +545,65 @@ body {
   padding: 3rem 0;
 }
 
-.newsLetter form h3{
+.newsLetter form h3 {
   font-size: 1.5rem;
   color: #fff;
   padding-bottom: 0.5rem;
   font-weight: normal;
 }
 
-.newsLetter form .box{
+.newsLetter form .box {
   direction: rtl;
   width: 90%;
-  padding: 1rem ;
+  padding: 1rem;
   font-size: 1.2rem;
   color: var(--black);
   border-radius: 0.5rem;
-  text-transform: none;  
+  text-transform: none;
 }
 
+/* Arrivals Style */
+
+.arrivals .arrivals-slider .box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  border: var(--border);
+  margin: 1rem 0;
+}
+.arrivals .arrivals-slider .box:hover {
+  border: var(--border-hover);
+}
+
+.arrivals .arrivals-slider .box .image img {
+  height: 15rem;
+}
+
+.arrivals .arrivals-slider .box .content h3 {
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+.arrivals .arrivals-slider .box .content .price {
+  color: var(--black);
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.arrivals .arrivals-slider .box .content .price span {
+  color: var(--light-color);
+  font-size: 1.2rem;
+  text-decoration: line-through;
+}
+
+.arrivals .arrivals-slider .box .content .stars i{
+
+  font-size: 1.2rem;
+  color: var(--green);  
+
+
+}
 /* Media queris */
 
 @media (max-width: 991px) {
@@ -626,10 +668,9 @@ body {
   justify-content: space-around;
 }
 
-.newsLetter{
-  background-position:left;
+.newsLetter {
+  background-position: left;
 }
-
 
 @media (max-width: 600px) {
   html {
