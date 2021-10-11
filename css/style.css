@@ -507,7 +507,7 @@ body {
 }
 
 .swiper-button-next,
-.swiper-button-prev{
+.swiper-button-prev {
   border: var(--border-hover);
   border-radius: 5px;
   color: var(--black);
@@ -517,17 +517,50 @@ body {
 }
 
 .swiper-button-next::after,
-.swiper-button-prev::after{
+.swiper-button-prev::after {
   font-size: 1.2rem;
 }
 
 .swiper-button-next:hover,
-.swiper-button-prev:hover{
+.swiper-button-prev:hover {
   background: var(--black);
   color: #fff;
 }
 
+/* newsLetter Style */
 
+.newsLetter {
+  background: url(../image/letter-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* ویژگی زیر باعث اسکرول شدن تصویر بک گراند در حرکت صفحه میشود */
+  background-attachment: fixed;
+}
+
+.newsLetter form {
+  /* با دستورات زیر در وسط قرار میگیرد فرم*/
+  max-width: 40rem;
+  margin-left: auto;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.newsLetter form h3{
+  font-size: 1.5rem;
+  color: #fff;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.newsLetter form .box{
+  direction: rtl;
+  width: 90%;
+  padding: 1rem ;
+  font-size: 1.2rem;
+  color: var(--black);
+  border-radius: 0.5rem;
+  text-transform: none;  
+}
 
 /* Media queris */
 
@@ -592,6 +625,11 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
+.newsLetter{
+  background-position:left;
+}
+
 
 @media (max-width: 600px) {
   html {
