@@ -48,6 +48,7 @@ var swiper = new Swiper(".books-slider", {
   loop: true,
   autoplay: true,
   simulateTouch: true,
+  spaceBetween: 10,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
@@ -71,7 +72,7 @@ var swiper = new Swiper(".featured-slider", {
   centeredSlides: true,
   paginationClickable: true,
   loop: true,
-  spaceBetween: 10,
+  spaceBetween: 6,
   slideToClickedSlide: true,
   autoplay: {
     enabled: true,
@@ -99,6 +100,34 @@ var swiper = new Swiper(".featured-slider", {
 
 //swiper slider for arrivals section
 var swiper = new Swiper(".arrivals-slider", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  paginationClickable: true,
+  loop: true,
+  spaceBetween: 10,
+  slideToClickedSlide: true,
+  autoplay: {
+    enabled: true,
+    delay: 3000
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
+
+
+//swiper slider for reviews section
+var swiper = new Swiper(".reviews-slider", {
   slidesPerView: "auto",
   centeredSlides: true,
   paginationClickable: true,
