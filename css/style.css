@@ -655,39 +655,83 @@ body {
   text-align: center;
   padding: 2rem;
   cursor: pointer;
+  margin: 1rem 0;
 }
 
 .reviews .reviews-slider .box:hover {
   border: var(--border-hover);
 }
 
-.reviews .reviews-slider .box img{
+.reviews .reviews-slider .box img {
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.reviews .reviews-slider .box h3{
+.reviews .reviews-slider .box h3 {
   font-size: 2rem;
   color: var(--black);
-  padding:0.5rem 0;
-
+  padding: 0.5rem 0;
 }
 
-.reviews .reviews-slider .box p{
+.reviews .reviews-slider .box p {
   font-size: 1.2rem;
   color: var(--light-color);
-  padding:0.7rem 0;
+  padding: 0.7rem 0;
   line-height: 1.5;
 }
 
-.reviews .reviews-slider .box .stars i{
+.reviews .reviews-slider .box .stars i {
   font-size: 1.2rem;
   color: var(--green);
 }
 
+/* Blogs style */
 
+.blogs .blogs-slider .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  /* width: 30rem; */
+  border: var(--border);
+  cursor: pointer;
+}
+
+.blogs .blogs-slider .box .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blogs .blogs-slider .box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blogs .blogs-slider .box:hover .image img {
+  transform: scale(1.1);
+}
+.blogs .blogs-slider .box:hover{
+  border: var(--border-hover);
+}
+
+.blogs .blogs-slider .box .content {
+  padding: 1rem;
+}
+
+.blogs .blogs-slider .box .content h3 {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+.blogs .blogs-slider .box .content p {
+  font-size: 1.1rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+  line-height: 1.5;
+}
 
 /* Media queris */
 

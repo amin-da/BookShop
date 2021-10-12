@@ -152,3 +152,31 @@ var swiper = new Swiper(".reviews-slider", {
     }
   }
 });
+
+
+//swiper slider for blogs section
+var swiper = new Swiper(".blogs-slider", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  paginationClickable: true,
+  loop: true,
+  spaceBetween: 10,
+  slideToClickedSlide: true,
+  autoplay: {
+    enabled: true,
+    delay: 3000
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
