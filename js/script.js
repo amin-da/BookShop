@@ -8,12 +8,22 @@ window.onscroll = () => {
   searchForm.classList.remove("active");
 };
 
+//loader functionality
+function loader() {
+  document.querySelector(".loader-conatiner").classList.add("active");
+}
+
+function fadeOut() {
+  setTimeout(loader, 3000);
+}
+
 window.onload = () => {
   if (window.scrollY > 60) {
     document.querySelector(".header .header-2").classList.add("active");
   } else {
     document.querySelector(".header .header-2").classList.remove("active");
   }
+  fadeOut();
 };
 
 //search-form in responsive mode
@@ -125,7 +135,6 @@ var swiper = new Swiper(".arrivals-slider", {
   }
 });
 
-
 //swiper slider for reviews section
 var swiper = new Swiper(".reviews-slider", {
   slidesPerView: "auto",
@@ -152,7 +161,6 @@ var swiper = new Swiper(".reviews-slider", {
     }
   }
 });
-
 
 //swiper slider for blogs section
 var swiper = new Swiper(".blogs-slider", {

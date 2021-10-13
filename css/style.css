@@ -714,7 +714,7 @@ body {
 .blogs .blogs-slider .box:hover .image img {
   transform: scale(1.1);
 }
-.blogs .blogs-slider .box:hover{
+.blogs .blogs-slider .box:hover {
   border: var(--border-hover);
 }
 
@@ -735,71 +735,91 @@ body {
 
 /* footer style */
 
-.footer .box-container{
+.footer .box-container {
   display: grid;
   direction: rtl;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
 }
 
-.footer .box-container .box h3{
+.footer .box-container .box h3 {
   font-size: 2rem;
   color: var(--black);
   padding: 1rem 0;
 }
 
-.footer .box-container .box a{
+.footer .box-container .box a {
   display: block;
   font-size: 1.1rem;
-  color: var(--light-color) ;
+  color: var(--light-color);
   padding: 1rem 0;
 }
 
-.footer .box-container .box a i{
- color: var(--green);
- margin-left: 0.5rem ;
+.footer .box-container .box a i {
+  color: var(--green);
+  margin-left: 0.5rem;
 }
 
-.footer .box-container .box a:hover i{
+.footer .box-container .box a:hover i {
   padding-right: 1rem;
- }
+}
 
- .footer .box-container .box .map{
-   width: 100%;
- }
- .footer .share{
-   padding: 1rem 0;
-   text-align: center;
- }
+.footer .box-container .box .map {
+  width: 100%;
 
- .footer .share a{
+}
+.footer .share {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer .share a {
   height: 4rem;
   width: 4rem;
   line-height: 4rem;
   font-size: 2rem;
   color: #fff;
   background: var(--green);
-  margin:0 0.3rem;
+  margin: 0 0.3rem;
   border-radius: 50%;
   text-align: center;
- }
- .footer .share a:hover{
-   background: var(--black);
- }
+}
+.footer .share a:hover {
+  background: var(--black);
+}
 
- .footer .credit{
-   border-top:var(--border) ;
-   margin-top: 1rem;
-   padding-top: 1.5rem;
-   padding: 0rem 1rem;
-   font-size: 1.5rem;
-   color: var(--light-color);
-   text-align-last: center;
- }
- .footer .credit a{
-   color: var(--green);
- }
+.footer .credit {
+  border-top: var(--border);
+  margin:  1.5rem 0;
+  padding: 1.5rem 0;
+  padding: 0rem 1rem;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  text-align-last: center;
+}
+.footer .credit a {
+  color: var(--green);
+}
 
+/* loader style */
+.loader-conatiner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader-conatiner.active{
+  display: none;
+}
+.loader-conatiner img{
+  height: 10rem;
+}
 
 /* Media queris */
 
