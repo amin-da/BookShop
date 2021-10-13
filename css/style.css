@@ -733,6 +733,74 @@ body {
   line-height: 1.5;
 }
 
+/* footer style */
+
+.footer .box-container{
+  display: grid;
+  direction: rtl;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.1rem;
+  color: var(--light-color) ;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+ color: var(--green);
+ margin-left: 0.5rem ;
+}
+
+.footer .box-container .box a:hover i{
+  padding-right: 1rem;
+ }
+
+ .footer .box-container .box .map{
+   width: 100%;
+ }
+ .footer .share{
+   padding: 1rem 0;
+   text-align: center;
+ }
+
+ .footer .share a{
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  color: #fff;
+  background: var(--green);
+  margin:0 0.3rem;
+  border-radius: 50%;
+  text-align: center;
+ }
+ .footer .share a:hover{
+   background: var(--black);
+ }
+
+ .footer .credit{
+   border-top:var(--border) ;
+   margin-top: 1rem;
+   padding-top: 1.5rem;
+   padding: 0rem 1rem;
+   font-size: 1.5rem;
+   color: var(--light-color);
+   text-align-last: center;
+ }
+ .footer .credit a{
+   color: var(--green);
+ }
+
+
 /* Media queris */
 
 @media (max-width: 991px) {
