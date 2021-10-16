@@ -928,10 +928,10 @@ body {
   }
   .icons-container #icon-payment{
     gap: 4rem;
-  
   }
+  
+  
   .icons-container #icon-payment .content{
- 
     text-align: center;
   } 
   .footer .box-container .box{
@@ -949,5 +949,9 @@ body {
   .icons-container #icon-payment{
     gap: 2rem;
   }
+  .icons-container #icon-varanty{
+    gap: 3rem;
+  }
+  
 
 }
