@@ -942,9 +942,12 @@ body {
   }
 }
 
-@media (max-width: 385px) {
-  .icons-container #icon-payment{
-    gap: 2.8rem;
-  
+@media (max-width: 380px) {
+  .icons-container {
+    flex-direction: column;
   }
+  .icons-container #icon-payment{
+    gap: 2rem;
+  }
+
 }
