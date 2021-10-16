@@ -941,3 +941,10 @@ body {
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 385px) {
+  .icons-container #icon-payment{
+    gap: 2.8rem;
+  
+  }
+}
