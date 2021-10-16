@@ -427,6 +427,7 @@ body {
   border: var(--border);
   border-radius: 0.5rem;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -892,13 +893,51 @@ body {
 @media (max-width: 600px) {
   html {
     font-size: 60%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 55%;
-    border: 1px solid red;
+  
+  }
+  .header .header-1 .logo{
+    font-size: 2.3rem;
+    right: 3rem;
+  }
+  .header .header-1 .logo i{
+    font-size: 3rem;
+    right: -3.9rem;
+    top: 1px;
+  } 
+  .header .header-1 .icons div,
+  .header .header-1 .icons a {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.header .header-1 .search-form {
+  height: 4rem;
+}
+  .featured .featured-slider .box {
+    
+   width: 20rem;
+  }
+  .icons-container #icon-headphone{
+    margin-right: 25px;
+  }
+  .icons-container #icon-payment{
+    gap: 4rem;
+  
+  }
+  .icons-container #icon-payment .content{
+ 
+    text-align: center;
+  } 
+  .footer .box-container .box{
+   margin-right: 2rem;
+  }
+  .footer .box-container .box a{
+    font-size: 1.5rem;
   }
 }
