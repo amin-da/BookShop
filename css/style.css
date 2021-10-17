@@ -945,13 +945,32 @@ body {
 @media (max-width: 380px) {
   .icons-container {
     flex-direction: column;
+    align-items: center;
+  }
+  .icons-container .icons{
+    border-bottom: var(--border);
+  }
+  .icons-container #icon-free i{
+    width: 4rem;
+   
   }
   .icons-container #icon-payment{
-    gap: 2rem;
+    gap: 3rem;
   }
   .icons-container #icon-varanty{
     gap: 3rem;
+    display: flex;
+    align-items: center;
+    width: 19rem;
+    justify-content: flex-start;
   }
   
+  .icons-container #icon-headphone{
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    width: 22rem;
+    justify-content: flex-start;
+  }
 
 }
