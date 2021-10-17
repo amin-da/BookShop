@@ -14,7 +14,7 @@ function loader() {
 }
 
 function fadeOut() {
-  setTimeout(loader, 2500);
+  setTimeout(loader, 2800);
 }
 
 window.onload = () => {
