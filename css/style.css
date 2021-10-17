@@ -215,7 +215,7 @@ body {
   display: none;
 }
 .bottom-navbar a {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 1.5rem;
   color: #fff;
 }
@@ -792,7 +792,7 @@ body {
 
 .footer .credit {
   border-top: var(--border);
-  margin:  1.5rem 0;
+  margin-bottom:  2rem;
   padding: 1.5rem 0;
   padding: 0rem 1rem;
   font-size: 1.5rem;
@@ -930,8 +930,6 @@ body {
   .icons-container #icon-payment{
     gap: 4rem;
   }
-  
-  
   .icons-container #icon-payment .content{
     text-align: center;
   } 
@@ -939,7 +937,7 @@ body {
    margin-right: 2rem;
   }
   .footer .box-container .box a{
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 }
 
@@ -956,7 +954,6 @@ body {
   }
   .icons-container #icon-free i{
     width: 4rem;
-   
   }
   .icons-container #icon-payment{
     gap: 3rem;
