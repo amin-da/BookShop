@@ -226,7 +226,7 @@ body {
 /* Login Form */
 .login-form-container {
   position: fixed;
-  top: -115%;
+  top: -125%;
   right: 0%;
   z-index: 10000;
   height: 100%;
@@ -437,7 +437,7 @@ body {
 
 .featured .featured-slider .box .image {
   padding: 1rem;
-  background: linear-gradient(15deg, #eee 20%, #fff 20%);
+  background: linear-gradient(11deg, #eee 15%, #fff 15%);
 }
 .featured .featured-slider .box .image img {
   height: 20rem;
@@ -479,6 +479,7 @@ body {
 .featured .featured-slider .box .content {
   background: #eee;
   padding: 1rem;
+  width: 17.5rem;
 }
 
 .featured .featured-slider .box .content h3 {
@@ -943,6 +944,9 @@ body {
 }
 
 @media (max-width: 380px) {
+  .login-form-container form {
+    margin:0 2rem;
+  }
   .icons-container {
     flex-direction: column;
     align-items: center;
