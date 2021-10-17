@@ -80,10 +80,8 @@ var swiper = new Swiper(".books-slider", {
 var swiper = new Swiper(".featured-slider", {
   slidesPerView: "auto",
   centeredSlides: true,
-  paginationClickable: true,
   loop: true,
   spaceBetween: 6,
-  slideToClickedSlide: true,
   autoplay: {
     enabled: true,
     delay: 3000
