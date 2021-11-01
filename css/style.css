@@ -532,11 +532,12 @@ body {
 /* newsLetter Style */
 
 .newsLetter {
-  background: url(../image/letter-bg.jpg) no-repeat;
+  background: url(../image/bg2.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   /* ویژگی زیر باعث اسکرول شدن تصویر بک گراند در حرکت صفحه میشود */
   background-attachment: fixed;
+ 
 }
 
 .newsLetter form {
@@ -549,7 +550,7 @@ body {
 
 .newsLetter form h3 {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--black);
   padding-bottom: 0.5rem;
   font-weight: normal;
 }
